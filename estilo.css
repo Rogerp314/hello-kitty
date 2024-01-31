@@ -1,0 +1,87 @@
+@charset "UTF-8";
+@font-face {
+    font-family: 'kitty';
+    src: url('dados/fonts/kittyspoon.ttf') format('truetype');
+}
+
+:root{
+    --cor0: black;
+    --cor1: white;
+    --cor3: pink;
+    --cor4: #ff00bf;
+
+
+    --font-destaque: 'kitty';
+    --font-padrao: Arial, Helvetica, sans-serif;
+}
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    background-color: var(--cor3);
+    font: normal normal 1em var(--font-padrao);
+}
+header{
+    text-align: center;
+    margin-top: 90px;
+    font: normal bold 2em 'kitty';
+}
+main{
+    background-color: var(--cor1);
+    max-width: 500px;
+    margin: auto;
+    margin-top: 50px;
+    padding: 15px;
+    border-radius: 7px;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.208);
+}
+main h2{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 3em;
+    font-style: italic;
+    text-align: center;
+    color: var(--cor4);
+}
+.cadastro{
+    text-align: center;
+    margin: 20px;
+}
+#name{
+    margin-bottom: 10px;
+    width: 250px;
+    height: 20px;
+    border-color: black;
+    border-radius: 10px;
+    text-align: center;
+}
+#senha{
+    text-align: center;
+    width: 250px;
+    height: 20px;
+    border-color: black;
+    border-radius: 10px;
+}
+#entrar{
+    background-color: var(--cor0);
+    color: var(--cor1);
+    margin-top: 15px;
+    width: 100px;
+    height: 30px;
+    font-style: italic;
+    cursor: pointer;
+    border-radius: 10px;
+    border-color: black;
+}
+#entrar:hover{
+    font-weight: bold;
+}
+#entrar:active{
+    color: black;
+    background-color: var(--cor3);
+}
+#laco{
+    margin-top: -250px;
+    margin-right: -70px;
+}

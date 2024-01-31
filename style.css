@@ -1,0 +1,113 @@
+@charset "UTF-8";
+@font-face {
+    font-family: 'kitty';
+    src: url('dados/fonts/kittyspoon.ttf') format('truetype');
+}
+
+:root{
+    --cor0: black;
+    --cor1: white;
+    --cor3: pink;
+    --cor4: #ff00bf;
+
+
+    --font-destaque: 'kitty';
+    --font-padrao: Arial, Helvetica, sans-serif;
+}
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    background-color: var(--cor3);
+    font: normal normal 1em var(--font-padrao);
+}
+header{
+    text-align: left;
+    margin: 250px auto 50px 100px;
+    font-family: var(--font-destaque);
+}
+header  h1{
+    font-size: 3em;
+    color: var(--cor4);
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.361);
+}
+header p{
+    font-size: 1.65em;
+}
+main{
+    background-image: linear-gradient(90deg, white, transparent);
+    height: 300px;
+    width: 650px;
+    padding: 15px;
+    margin: -225px auto 0px 800px;
+    text-align: justify;
+    border-radius: 10px;
+}
+main h2{
+    text-align: center;
+    margin-bottom: 15px;
+    font-family: var(--font-destaque);
+    font-size: 2em;
+}
+#imagem{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#laco{
+    margin-left: 350px;
+}
+
+#botao{
+    background-color: var(--cor0);
+    color: var(--cor3);
+    display: block;
+    margin: auto;
+    margin-top: -45px;
+    width: 150px;
+    height: 40px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+#botao:active{
+    background-color: var(--cor3);
+    color: var(--cor0);
+    box-shadow: inset 2px 2px 3px rgba(0, 0, 0, 0.457);
+}
+footer{
+    background-color: black;
+    color: white;
+    margin-top: 210px;
+    text-align: center;
+}
+footer a{
+    color: var(--cor3);
+    text-decoration: none;
+}
+footer a:hover{
+    text-decoration: underline;
+    font-weight: bold;
+}
+@media (max-width: 1500px){
+    *{
+        margin: 0px;
+        padding: 0px;
+    }
+    header{
+        text-align: center;
+        margin: 0px auto 0px auto;
+    }
+    header h1{
+        font-size: 2.8em;
+    }
+    main{
+        background-color: var(--cor1);
+        margin: 30px auto 0px auto;
+        max-width: 400px;
+    }
+    #laco{
+        margin-left: 225px;
+    }
+}
