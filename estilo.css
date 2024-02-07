@@ -91,6 +91,26 @@ main p{
     background-color: var(--cor3);
 }
 #laco{
-    margin-top: -250px;
-    margin-right: -70px;
+    margin-top: -50px;
+    margin-left: 85px;
+}
+footer{
+    background-color: black;
+    color: white;
+    text-align: center;
+    margin-top: 224px;
+}
+footer a{
+    color: var(--cor3);
+    text-decoration: none;
+    font-weight: bold;
+}
+footer a:hover{
+    color: blue;
+    text-decoration: underline;
+}
+@media (max-width: 1500px){
+    footer{
+        margin-top: 223px;
+    }
 }

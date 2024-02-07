@@ -16,6 +16,6 @@ function entrar(){
         nome.focus()
         senha.value=''
     } else{
-        return location.replace('apresentacao.html')
+        return location.replace('conteudo.html')
     }
 }
