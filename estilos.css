@@ -1,0 +1,57 @@
+@charset "UTF-8";
+@font-face {
+    font-family: 'gata';
+    src: url('dados/fonts/kittyspoon.ttf') format('truetype');
+}
+*{
+    margin: 0px;
+    padding: 0px;
+}
+:root{
+    --cor-titulo:#ff0095;
+    --cor-de-fundo: pink;
+    --cor-dos-botoes: #d400ff;
+
+    --font-destaque: 'gata';
+}
+
+body{
+    background-color: var(--cor-de-fundo);
+    font: normal normal 1em Arial, sans-serif;
+    text-align: justify;
+}
+h1, h2, h3{
+    text-align: center;
+}
+h1{
+    background-color: var(--cor-titulo);
+    font: normal normal 3em var(--font-destaque), Arial, Helvetica, sans-serif;
+    padding: 10px;
+    text-shadow: 3px 3px 4px rgba(0, 0, 0, 0.400);
+}
+nav{
+    background-image: linear-gradient(to bottom, var(--cor-titulo), var(--cor-de-fundo));
+    font-size: 18px;
+    text-align: center;
+    padding: 15px 0px 30px 0px;
+}
+span{
+    background-color: var(--cor-dos-botoes);
+    padding: 7px;
+    margin: 0px 50px 0px 50px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+span:active{
+    box-shadow: inset 3px 3px 4px rgba(0, 0, 0, 0.221);
+}
+a{
+    color: black;
+    text-decoration: none;
+}
+
+main{
+    background-color: white;
+    width: 800px;
+    margin: auto;
+}
