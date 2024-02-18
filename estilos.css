@@ -42,6 +42,11 @@ span{
     border-radius: 10px;
     cursor: pointer;
 }
+span:hover{
+    background-color: var(--cor-titulo);
+    color: var(--cor-dos-botoes);
+    transition: .25s;
+}
 span:active{
     box-shadow: inset 3px 3px 4px rgba(0, 0, 0, 0.221);
 }
