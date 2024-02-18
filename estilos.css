@@ -33,7 +33,7 @@ nav{
     background-image: linear-gradient(to bottom, var(--cor-titulo), var(--cor-de-fundo));
     font-size: 18px;
     text-align: center;
-    padding: 15px 0px 30px 0px;
+    padding: 60px 0px 30px 0px;
 }
 span{
     background-color: var(--cor-dos-botoes);
