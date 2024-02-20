@@ -60,6 +60,7 @@ main p{
     border-color: black;
     border-radius: 10px;
     text-align: center;
+    font: italic bold 20px Arial, Helvetica, sans-serif;
 }
 #senha{
     display: block;

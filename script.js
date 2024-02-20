@@ -16,6 +16,13 @@ function entrar(){
         nome.focus()
         senha.value=''
     } else{
+        return (chave())
+    }
+}
+function chave(event){
+    const pass = event.key
+    pass=='Enter'
+    if(nome.value==dados.Nome && senha.value==dados.Senha){
         return location.replace('conteudo.html')
     }
 }
